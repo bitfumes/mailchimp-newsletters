@@ -39,6 +39,6 @@ class MailchimpNewslettersServiceProvider extends ServiceProvider
             $configuredLists = NewsletterListCollection::createFromConfig(config('mailchimpNewsletter'));
             return new MailChimp($mailChimp, $configuredLists);
         });
-        $this->app->alias(Mailchimp::class, 'mailchimpNewsletter');
+        $this->app->alias(Mailchimp::class, 'mailchimp');
     }
 }
