@@ -11,7 +11,7 @@ return [
      */
     'defaultList' => 'test',
     /*
-     * Define list related properties
+     * Define list related properties.
      */
     'lists' => [
         /*
