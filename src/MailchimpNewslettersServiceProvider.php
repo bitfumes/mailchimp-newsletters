@@ -20,7 +20,7 @@ class MailchimpNewslettersServiceProvider extends ServiceProvider
         // $this->loadViewsFrom(__DIR__.'/../resources/views', 'MailchimpNewsletters');
         // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         // $this->loadRoutesFrom(__DIR__.'/routes.php');
-        $this->mergeConfigFrom(__DIR__ . '/../config/mailchimpNewsletters.php', 'mailchimpNewsletter');
+        $this->mergeConfigFrom(__DIR__ . '/../config/MailchimpNewsletters.php', 'mailchimpNewsletter');
         $this->publishes([
             __DIR__ . '/../config/mailchimpNewsletters.php' => config_path('mailchimpNewsletter.php'),
         ]);
