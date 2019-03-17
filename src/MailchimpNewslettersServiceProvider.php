@@ -37,7 +37,7 @@ class MailchimpNewslettersServiceProvider extends ServiceProvider
             $mailChimp = new MailChimpApi(config('mailchimpNewsletter.apiKey'));
             $mailChimp->verify_ssl = config('mailchimpNewsletter.ssl', true);
             $configuredLists = NewsletterListCollection::createFromConfig(config('mailchimpNewsletter'));
-            return new MailChimp($mailChimp, $configuredLists);
+            return new Mailchimp($mailChimp, $configuredLists);
         });
         $this->app->alias(Mailchimp::class, 'mailchimp');
     }
